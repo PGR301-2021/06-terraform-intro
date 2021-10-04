@@ -31,7 +31,7 @@ git clone https://github.com/PGR301-2021/06-terraform-intro.git
 
 ## Følg Hashicorp sine tutorials 
 
-Disse er godt skrevet. Les teksten, og ta deg god tid!
+Disse er godt skrevet. Les teksten, og ta deg god tid! Du gjør disse i ditt Cloud9 miljø
 
 * Du skal IKKE gjøre aws configure  - rettigheter og nøkler er tatt hånd om av Cloud 9
 
