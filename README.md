@@ -7,7 +7,7 @@ Dagens øving skal gjøres i Cloud 9. Påloggingsinfo blir gitt i klasserom.
 
 Merk
 
-* Du skal IKKE gjøre aws configure  - det er tatt hånd om av Cloid 9
+* Du skal IKKE gjøre aws configure  - rettigheter og nøkler er tatt hånd om av Cloud 9
 
 * https://learn.hashicorp.com/tutorials/terraform/aws-build?in=terraform/aws-get-started
 
