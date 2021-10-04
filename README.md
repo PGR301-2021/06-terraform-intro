@@ -6,7 +6,7 @@ Dagens øving skal gjøres i Cloud 9. Påloggingsinfo blir gitt i klasserom.
 
 * Git Clone følgende repository fra ditt Cloud9 miljø
 ```
-https://github.com/PGR301-2021/06-terraform-intro.git
+git clone https://github.com/PGR301-2021/06-terraform-intro.git
 ```
 
 ## Terraform uten backend 
