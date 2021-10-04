@@ -4,19 +4,19 @@ Dagens øving skal gjøres i Cloud 9. Påloggingsinfo blir gitt i klasserom.
 
 ## Test S3 eksemplene selv 
 
-* Git Clone følgende repositoru 
+* Git Clone følgende repository fra ditt Cloud9 miljø
 ```
 https://github.com/PGR301-2021/06-terraform-intro.git
 ```
 
 ## Terraform uten backend 
 
-* Gjør terraform init, plan , apply og destroy i  ```s3-no-backend``` 
+* Gjør terraform init, plan , apply og destroy i katalogen  ```s3-no-backend``` 
 * Kjør terraform show, og se på state fila i Cloud9
 
 ## Terraform med backend 
 
-* Endre backend -blokken i provider.tf - key må være unikt. Bruk feks ditt eget navn istedet for glenn.
+* I katalogen ```s3-with-backend``` -> Endre backend blokken i provider.tf - key må være unikt. Bruk feks ditt eget navn istedet for glenn.
 
 ```hcl
  backend "s3" {
@@ -27,9 +27,9 @@ https://github.com/PGR301-2021/06-terraform-intro.git
 ```
 
 * Gjør terraform init, plan , apply og destroy i ```s3-with-backend``` mappene og se hva som skjer. Du får ingen state fil!
-* Gå il AWS console og se at du har fått en fil i ```pgr301-2021-terraform-state``` bucket
+* Gå il AWS console og se at du har fått en fil i bucket med navn ```pgr301-2021-terraform-state``` 
 
-## Følg Hashicorp tutorials 
+## Følg Hashicorp sine tutorials 
 
 Disse er godt skrevet. Les teksten, og ta deg god tid!
 
