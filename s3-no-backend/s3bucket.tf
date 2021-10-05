@@ -1,3 +1,3 @@
 resource "aws_s3_bucket" "mybucket" {
-  bucket = "mydronemovies"
+  bucket = "pgr301-terraform-demobucket"
 }
