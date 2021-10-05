@@ -22,8 +22,9 @@ resource "aws_s3_bucket" "mybucket" {
 
 ## Terraform uten backend 
 
-* Gjør terraform init, plan , apply og destroy i katalogen  ```s3-no-backend``` 
+* Gjør terraform init, plan , apply i katalogen  ```s3-no-backend``` 
 * Kjør terraform show, og se på state fila i Cloud9
+* Kjør ```terraform destroy``` og se at  "resources" blir en tom array i state fila
 
 ## Terraform med backend 
 
@@ -36,9 +37,17 @@ resource "aws_s3_bucket" "mybucket" {
     region = "eu-north-1"
   }
 ```
-
 * Gjør terraform init, plan , apply og destroy i ```s3-with-backend``` mappene og se hva som skjer. Du får ingen state fil!
-* Gå il AWS console og se at du har fått en fil i bucket med navn ```pgr301-2021-terraform-state``` 
+* Gå til AWS console og se at du har fått en fil i bucket med navn ```pgr301-2021-terraform-state``` 
+
+## Mulige problmer:
+Hvis dere får feilmeldingen
+```│ Error: Backend configuration changed │ │ A change in the backend configuration has been detected, which may require migrating existing state. │ │ If you wish to attempt automatic migration of the state, use "terraform init -migrate-state". │ If you wish to store the current configuration with no changes to the state, use "terraform init -reconfigure".```
+Kan det hjelpe å slette .terraform katalogen, som er terraform sin midlertidige arbeidskatalog
+
+```shell
+rm -rf .terraform
+```
 
 ## Følg Hashicorp sine tutorials 
 
