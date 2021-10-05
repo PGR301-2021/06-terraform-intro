@@ -18,6 +18,7 @@ resource "aws_iam_user_policy" "student_policy" {
   "Statement": [
     {
       "Action": [
+        "s3:*",
         "ecs:*",
         "apprunner:*",
         "logs:*",

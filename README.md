@@ -9,6 +9,17 @@ Dagens øving skal gjøres i Cloud 9. Påloggingsinfo blir gitt i klasserom.
 git clone https://github.com/PGR301-2021/06-terraform-intro.git
 ```
 
+Bucket navn i AWS er globalt unikt så dere kan ikke bruke pgr301-terraform-demobucket som bucket navn.
+Endre derfor denne verdien i s3bucket.tf til for eksempel å inkludere navnet ditt. 
+
+feks
+
+```shell
+resource "aws_s3_bucket" "mybucket" {
+  bucket = "glenn-terraform-demo-bucket"
+}
+```
+
 ## Terraform uten backend 
 
 * Gjør terraform init, plan , apply og destroy i katalogen  ```s3-no-backend``` 
