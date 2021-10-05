@@ -9,4 +9,3 @@ module "students" {
 output "urls" {
   value = { for student in keys(var.students) : student => module.students[student].cloud9_url }
 }
-

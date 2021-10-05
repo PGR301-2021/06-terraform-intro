@@ -37,7 +37,8 @@ resource "aws_s3_bucket" "mybucket" {
     region = "eu-north-1"
   }
 ```
-* Gjør terraform init, plan , apply og destroy i ```s3-with-backend``` mappene og se hva som skjer. Du får ingen state fil!
+
+* Gjør terraform init, plan , apply og destroy i ```s3-with-backend``` mappene og se hva som skjer. Du får ingen state fil.
 * Gå til AWS console og se at du har fått en fil i bucket med navn ```pgr301-2021-terraform-state``` 
 
 ## Mulige problmer:
