@@ -55,7 +55,7 @@ Du kan deretter gjøre følgende ;
 * https://learn.hashicorp.com/tutorials/terraform/aws-variables?in=terraform/aws-get-started
 * https://learn.hashicorp.com/tutorials/terraform/aws-outputs?in=terraform/aws-get-started
 
-## Improviser 
+## Stretch goal: Improviser 
 
 Så på AWS provider dokumentasjonen https://registry.terraform.io/providers/hashicorp/aws/latest/docs 
 Forsøk å få deployet en Apprunner tjenest med Terraform. 
